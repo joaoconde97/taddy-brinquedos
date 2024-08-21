@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-principal: "Montserrat";
+    --preto: black;
+    --cinza: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    
+}
+
+
+/* #TOPO */
+.topo {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    background-color: plum;
+    margin: .5rem 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.7rem;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(230, 216, 231, 0.507);
+    border-radius: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 800;
+    padding: 10px 20px;
+}
+
+
+
+/* #PRODUTOS */
+
+.imagens-produtos {
+    width: 200px;
+    height: 180px;
+    border-radius: 1rem;
+}
+
+.secao-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 2rem auto;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 40px 20px;
+}
+
+.card-produto-texto {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--cinza);
+}
+
+.card-produto:hover {
+    background-color: rgba(230, 216, 231, 0.507);
+    border-radius: 1rem;
+    
+}
+
+
+/* SOBRE */
+
+#sobre {
+    text-align: center;
+    background-color: plum;
+    padding: 2rem;
+}
+
+.sobre-texto {
+    width: 80%;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+}
+
+
+/* CONTATO */
+
+#contato {
+    text-align: center;
+    padding: 5.3rem;
+}
+
+#contato ul li {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+/* RODAPE */
+
+.rodape {
+    background-color: plum;
+    padding: 2rem;
+    text-align: center;
+}
+
+.rodape span {
+    font-weight: 700;
+}
