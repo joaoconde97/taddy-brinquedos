@@ -38,6 +38,7 @@ body {
     justify-content: center;
     list-style-type: none;
     padding: 0.7rem;
+    gap: 32px;
 }
 
 .menu ul li a:hover {
@@ -47,9 +48,10 @@ body {
 
 .menu ul li a {
     text-decoration: none;
-    color: var(--preto);
+    color: white;
     font-weight: 800;
     padding: 10px 20px;
+    font-size: 1.5rem;
 }
 
 
@@ -73,7 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    padding: 40px 20px;
+    padding: 40px 32px;
 }
 
 .card-produto-texto {
@@ -81,6 +83,23 @@ body {
     justify-content: space-between;
     font-size: 12px;
     color: var(--cinza);
+}
+
+
+.botao-produtos {
+    background-color: plum;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.8rem;
+    border-radius: 8px;
+}
+
+.botao-produtos:hover {
+    background-color: white;
+    color: plum;
 }
 
 .card-produto:hover {
@@ -128,3 +147,72 @@ body {
 .rodape span {
     font-weight: 700;
 }
+
+/* PRODUTOS / PAGINA DE ALUGUEL */
+
+.container-produto-aluguel {
+    width: 80%;
+    display: flex;
+    column-gap: 32px;
+    margin: 0 auto;
+    padding: 24px;
+    border-bottom: 1px solid plum;
+    line-height: 1.8rem;
+}
+
+.container-produto-aluguel h2 {
+    font-size: 3rem;
+}
+
+.subtitulo {
+    font-weight: 700;
+}
+
+.container-produto-aluguel-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(245, 207, 245);
+    border-radius: 10px;
+}
+
+.container-botoes {
+    display: flex;
+    column-gap: 12px;
+}
+
+.botao-carrinho {
+    width: 50%;
+    background-color: var(--preto);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: 0;
+    text-align: center;
+}
+
+.botao-carrinho:hover {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.botao-agendar {
+    width: 50%;
+    background-color: white;
+    color: plum;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao-agendar:hover {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.imagem-produto-aluguel {
+    width: 50%;
+    border-radius: 10px;
+}
+
+
