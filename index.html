@@ -9,9 +9,11 @@
 </head>
 
 <body>
+
+    <!-- CABECALHO / MENU TOPO -->
     <header class="topo">
         <div>
-            <img src="/assets/logo.png" alt="Logo Taddy Brinquedos" width="200px">
+            <img class="logo" src="/assets/logo.png" alt="Logo Taddy Brinquedos" width="200px">
         </div>
 
         <nav class="menu">
@@ -23,9 +25,50 @@
             </ul>
         </nav>
     </header>
+    <!-- CARROUSEL DE IMAGENS -->
     <section class="carrousel-imagens">
+        <div class="carrousel-imagens-container">
+            
+            <div class="fade slide">
+                <div class="carrousel-num">1 / 4</div>
+                <img src="/assets/img-2.jpg" alt="" style="width: 100%; height: 600px;">
+                <div class="carrousel-texto"></div>
+            </div>
+
+            <div class="fade slide">
+                <div class="carrousel-num">2 / 4</div>
+                <img src="/assets/img-3.jpg" alt="" style="width: 100%; height: 600px;">
+                <div class="carrousel-texto"></div>
+            </div>
+
+            <div class="fade slide">
+                <div class="carrousel-num">3 / 4</div>
+                <img src="/assets/img-1.png" alt="" style="width: 100%; height: 600px;">
+                <div class="carrousel-texto"></div>
+            </div>
+
+            <div class="fade slide">
+                <div class="carrousel-num">4 / 4</div>
+                <img src="/assets/img-4.webp" alt="" style="width: 100%; height: 600px;">
+                <div class="carrousel-texto"></div>
+            </div>
+
+            <a class="prev" onclick="maisSlides(-1)">&#10094</a>
+            <a class="next" onclick="maisSlides(1)">&#10095</a>
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="slideAtual(1)"></span>
+            <span class="dot" onclick="slideAtual(2)"></span>
+            <span class="dot" onclick="slideAtual(3)"></span>
+            <span class="dot" onclick="slideAtual(4)"></span>
+        </div>
 
     </section>
+
+    <hr class="traco">
+    <!-- SECAO DE PRODUTOS -->
     <section class="secao-produtos">
         <div class="card-produto">
             <img class="imagens-produtos" src="/assets/cama.jpg" alt="">
@@ -67,6 +110,7 @@
             <a class="botao-produtos" href="">Agendar</a>
         </div>
     </section>
+    <!-- SECAO SOBRE A EMPRESA -->
     <section id="sobre">
         <h2>Sobre nós</h2>
         <p class="sobre-texto">Somos uma empresa familiar criada em 2020, com o intuito de levar alegria e diversão para
@@ -75,6 +119,7 @@
             manutenção e limpeza dos mesmos, e claro antendendo as necessidades de nossos cliente sempre e da melhor
             forma, se deseja tirar duvidas entre em contato conosco, e responderemos prontamente.</p>
     </section>
+    <!-- SECAO DE CONTATOS DA EMPRESA -->
     <section id="contato">
         <h2>Entre em contato</h2>
         <ul>
@@ -83,9 +128,12 @@
 
         </ul>
     </section>
+    <!-- RODAPE -->
     <footer class="rodape">
         <p>Desenvolvido por <span>João Dev.</span></p>
     </footer>
+
+<script src="/javascript.js"></script>
 </body>
 
 </html>
