@@ -13,15 +13,15 @@
     <!-- CABECALHO / MENU TOPO -->
     <header class="topo">
         <div>
-            <img class="logo" src="/assets/logo.png" alt="Logo Taddy Brinquedos" width="200px">
+            <img class="logo" src="/assets/logo.png" alt="Logo Taddy Brinquedos" width="200">
         </div>
 
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Aluguel</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#aluguel">Aluguel</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -31,25 +31,25 @@
             
             <div class="fade slide">
                 <div class="carrousel-num">1 / 4</div>
-                <img src="/assets/img-2.jpg" alt="" style="width: 100%; height: 600px;">
+                <img class="carrousel-imagens-item" src="/assets/img-2.jpg" alt="">
                 <div class="carrousel-texto"></div>
             </div>
 
             <div class="fade slide">
                 <div class="carrousel-num">2 / 4</div>
-                <img src="/assets/img-3.jpg" alt="" style="width: 100%; height: 600px;">
+                <img class="carrousel-imagens-item" src="/assets/img-3.jpg" alt="">
                 <div class="carrousel-texto"></div>
             </div>
 
             <div class="fade slide">
                 <div class="carrousel-num">3 / 4</div>
-                <img src="/assets/img-1.png" alt="" style="width: 100%; height: 600px;">
+                <img class="carrousel-imagens-item" src="/assets/img-1.png" alt="">
                 <div class="carrousel-texto"></div>
             </div>
 
             <div class="fade slide">
                 <div class="carrousel-num">4 / 4</div>
-                <img src="/assets/img-4.webp" alt="" style="width: 100%; height: 600px;">
+                <img class="carrousel-imagens-item" src="/assets/img-4.webp" alt="">
                 <div class="carrousel-texto"></div>
             </div>
 
@@ -69,7 +69,7 @@
 
     <hr class="traco">
     <!-- SECAO DE PRODUTOS -->
-    <section class="secao-produtos">
+    <section id="aluguel" class="secao-produtos">
         <div class="card-produto">
             <img class="imagens-produtos" src="/assets/cama.jpg" alt="">
             <h3>Cama Elástica</h3>
@@ -87,7 +87,7 @@
                 <p>Aluguel - 6Hrs</p>
                 <p>R$80.00</p>
             </div>
-            <a class="botao-produtos" href="">Agendar</a>
+            <a class="botao-produtos" href="/produtos/piscina-bolinhas.html">Agendar</a>
         </div>
 
         <div class="card-produto">
@@ -97,7 +97,7 @@
                 <p>Aluguel - 6Hrs</p>
                 <p>R$120.00</p>
             </div>
-            <a class="botao-produtos" href="">Agendar</a>
+            <a class="botao-produtos" href="/produtos/futsabao.html">Agendar</a>
         </div>
 
         <div class="card-produto">
@@ -107,7 +107,7 @@
                 <p>Aluguel - 6Hrs</p>
                 <p>R$120.00</p>
             </div>
-            <a class="botao-produtos" href="">Agendar</a>
+            <a class="botao-produtos" href="/produtos/toboga.html">Agendar</a>
         </div>
     </section>
     <!-- SECAO SOBRE A EMPRESA -->
@@ -123,10 +123,16 @@
     <section id="contato">
         <h2>Entre em contato</h2>
         <ul>
-            <li>Tel: (43) 99956-8900</li>
-            <li>Email: taddybrinquedos@gmail.com</li>
-
+            <li><a href=""><img class="contato-icone" src="/assets/whatsapp.png" alt=""></a></li>
+            <li><a href=""><img class="contato-icone" src="/assets/gmail.png" alt=""></a></li>
+            <li><a href=""><img class="contato-icone" src="/assets/instagram.png" alt=""></a></li>
         </ul>
+
+    <div class="cadastro-promocao">
+        <!-- <label for="cadastro">Email</label> -->
+        <input type="email" name="cadastro" id="cadastro" placeholder="nome@exemplo.com" onfocus="this.placeholder=''" onblur="this.placeholder='nome@exemplo.com'">
+        <button type="submit" class="botao-promocao">Quero receber promoções!</button>
+    </div>
     </section>
     <!-- RODAPE -->
     <footer class="rodape">

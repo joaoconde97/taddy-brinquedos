@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     width: 100%;
+    
 }
 
 .menu {
@@ -65,10 +67,17 @@ body {
 /* CARROUSEL */
 
 .carrousel-imagens-container {
-    max-width: 60%;
+    max-width: 90%;
     position: relative;
     margin: 0 auto;
     padding-top: 18px;
+}
+
+.carrousel-imagens-item {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .slide {
@@ -169,6 +178,7 @@ body {
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 24px;
+    max-width: 90%;
 }
 
 .card-produto {
@@ -236,6 +246,49 @@ body {
     margin-top: 8px;
 }
 
+#contato ul{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.contato-icone {
+    width: 30px;
+}
+
+/* CADASTRO PROMOÇAO */
+.cadastro-promocao {
+    padding: 20px;
+}
+
+.botao-promocao {
+    padding: 12px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastro-promocao label {
+    font-size: 18px;
+    font-weight: bolder;
+    border: 0.5px solid black;
+    padding: 10px 5px;
+}
+
+.cadastro-promocao input {
+    width: 400px;
+    height: 43px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.botao-promocao:hover {
+    background-color: plum;
+}
 /* RODAPE */
 
 .rodape {
@@ -315,4 +368,73 @@ body {
     border-radius: 10px;
 }
 
+/* MOBILE */
+@media only screen and (max-width: 600px)
+{
+    .secao-produtos {
+        flex-wrap: wrap;
+    }
 
+    .carrousel-imagens-container {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .carrousel-imagens-item {
+        height: 300px;
+        width: 100%;
+    }
+
+    .carrousel-texto, .carrousel-num {
+        display: none;
+    }
+}
+
+/* TABLETS */
+@media only screen and (max-width: 1024px)
+{
+    .secao-produtos {
+        flex-wrap: wrap;
+    }
+
+    .carrousel-imagens-container {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .carrousel-imagens-item {
+        height: 300px;
+        width: 100%;
+    }
+
+    .carrousel-texto, .carrousel-num {
+        display: none;
+    }
+
+    .imagens-produtos {
+        width: 300px;
+        height: 260px;
+        border-radius: 1rem;
+    }
+
+    .cadastro-promocao {
+        display: flex;
+        row-gap: 2px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .botao-promocao {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 1130px)
+{
+    .secao-produtos {
+        flex-wrap: wrap;
+        
+    }
+}
